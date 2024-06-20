@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
-keymap.set('n', '<leader>e', vim.cmd.Ex, { desc = "open explorer" })
+keymap.set("n", "<leader>e", vim.cmd.Ex, { desc = "open explorer" })
 
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -12,7 +12,7 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 
-keymap.set({"n", "v"}, "<leader>y", [["+y]])
+keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 keymap.set("n", "<leader>Y", [["+Y]])
 
 keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "clear search highlights" })
@@ -28,4 +28,4 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "open current buffer in new tab" })
 
-keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
+keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
