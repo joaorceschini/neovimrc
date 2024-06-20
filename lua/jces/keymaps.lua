@@ -2,7 +2,8 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
-keymap.set("n", "<leader>e", vim.cmd.Ex, { desc = "open explorer" })
+keymap.set("n", "<leader>ex", vim.cmd.Ex, { desc = "open explorer" })
+keymap.set("n", "<leader>er", vim.cmd.Rexplore, { desc = "return explorer" })
 
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
