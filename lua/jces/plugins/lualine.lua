@@ -187,7 +187,7 @@ return {
 		ins_right({
 			"branch",
 			icon = "",
-			color = { fg = colors.darkblue, gui = "bold" },
+			color = { fg = colors.orange, gui = "bold" },
 		})
 
 		ins_right({
