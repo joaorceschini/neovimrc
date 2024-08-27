@@ -76,6 +76,12 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+			["clangd"] = function()
+				lspconfig["clangd"].setup({
+					capabilities = capabilities,
+					-- Adicione qualquer configuração específica aqui
+				})
+			end,
 			["graphql"] = function()
 				-- configure graphql language server
 				lspconfig["graphql"].setup({

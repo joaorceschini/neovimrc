@@ -21,6 +21,13 @@ return {
 		require("luasnip.loaders.from_vscode").lazy_load()
 
 		cmp.setup({
+			---@diagnostic disable-next-line: missing-fields
+			performance = {
+				max_view_entries = 14,
+				trigger_debounce_time = 500,
+				throttle = 550,
+				fetching_timeout = 80,
+			},
 			completion = {
 				completeopt = "menu,menuone,preview,noselect",
 			},

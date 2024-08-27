@@ -33,3 +33,5 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "close current tab" 
 keymap.set("n", "<leader>tl", "<cmd>tabn<CR>", { desc = "go to next tab" })
 keymap.set("n", "<leader>th", "<cmd>tabp<CR>", { desc = "go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "open current buffer in new tab" })
+
+keymap.set("n", "<leader>c", ":!gcc % -o %:r && ./%:r<CR>", { noremap = true, silent = true })
