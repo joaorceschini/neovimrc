@@ -43,6 +43,7 @@ return {
 				-- "black", -- python formatter
 				-- "pylint",
 				"eslint_d",
+				"eslint-lsp",
 			},
 		})
 	end,
