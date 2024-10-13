@@ -22,6 +22,25 @@ return {
 	end,
 }
 
+--[[return {
+	"rose-pine/neovim",
+	config = function()
+		require("rose-pine").setup({
+			styles = {
+				variant = "moon",
+				transparency = true,
+				italic = false,
+			},
+			before_highlight = function(group, highlight, palette)
+				vim.api.nvim_set_hl(0, "@lsp.type.property.typescript", { fg = palette.pink })
+				vim.api.nvim_set_hl(0, "@lsp.type.property.typescriptreact", { fg = palette.pink })
+			end,
+		})
+		vim.cmd("colorscheme rose-pine")
+	end,
+}
+]]
+
 --[[ return {
   "folke/tokyonight.nvim",
   priority = 1000,
