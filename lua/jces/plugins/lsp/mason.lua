@@ -31,6 +31,7 @@ return {
 				"prismals",
 				"pyright",
 				"clangd",
+				"gopls",
 			},
 		})
 
@@ -43,6 +44,7 @@ return {
 				-- "pylint",
 				"eslint_d",
 				"eslint-lsp",
+				"goimports",
 			},
 		})
 	end,
